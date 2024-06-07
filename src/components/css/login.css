@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+.loginBox {
+  width: 27%;
+  height: 74vh;
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+
+  text-align: center;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-left: 500px;
+  box-shadow: 0px 10px 10px black;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  padding: 30px;
+  font-family: "Mate SC", serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.loginBox h2 {
+  width: 60%;
+  margin: 20px;
+  font-size: 27px;
+}
+.loginBox h3 {
+  font-size: 25px;
+}
+.loginBox input {
+  margin: 25px;
+  padding: 10px;
+  width: 60%;
+  background-color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+}
+.loginBox input:focus {
+  outline: none;
+}
+.loginBox input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+.loginBox button {
+  width: 65%;
+  height: 5vh;
+  background-color: transparent;
+  border: 1px solid #03c988;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Source Code Pro", monospace;
+}
+.loginBox button:hover {
+  background-color: #03c988;
+}
+
+@media only screen and (max-width: 750px) {
+  .loginBox {
+    width: 80%;
+    height: 74vh;
+
+    margin-top: 90px;
+    margin-left: 10px;
+  }
+  .loginBox input::placeholder {
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}

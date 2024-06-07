@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  font-family: "Mate SC", serif;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  color: #ffffff;
+  height: 100%;
+  width: 19%;
+  letter-spacing: 2px;
+}
+.Sidebar .Beforelogin {
+  display: flex;
+  flex-direction: column;
+  font-family: "Mate SC", serif;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  color: #ffffff;
+  height: 100%;
+  width: 19%;
+  letter-spacing: 2px;
+}
+
+.Sidebar p {
+  margin-top: 3vh;
+  font-size: 28px;
+  font-weight: 700;
+  width: 30%;
+}
+
+.Sidebar h2 {
+  font-family: "Source Code Pro";
+  letter-spacing: 2px;
+  border-bottom: 2px solid #3912f9;
+}
+.Sidebar h2:hover {
+  color: #900c3f;
+}
+
+.Sidebar h3 {
+  margin-top: 7vh;
+
+  font-size: 22px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.Sidebar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10vh;
+  border-bottom: 2px solid #900c3f;
+  font-family: "Source Code Pro", monospace;
+}
+.Sidebar a img {
+  margin-right: 40px;
+}
+
+.Sidebar a:hover {
+  color: #3912f9;
+}
+
+/* Responsive Website */
+
+@media only screen and (max-width: 750px) {
+  .Sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Mate SC", serif;
+    align-items: center;
+
+    background-color: black;
+    color: #ffffff;
+    height: 5%;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+
+  .Sidebar p {
+    font-size: 28px;
+    font-weight: 700;
+
+    display: none;
+  }
+
+  .Sidebar h2 {
+    font-family: "Source Code Pro";
+    letter-spacing: 2px;
+    border-bottom: 2px solid #3912f9;
+  }
+  .Sidebar h2:hover {
+    color: #900c3f;
+  }
+
+  .Sidebar h3 {
+    display: none;
+    font-size: 22px;
+    font-family: "Source Code Pro", monospace;
+  }
+
+  .Sidebar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0px;
+    border-bottom: 2px solid #900c3f;
+    font-family: "Source Code Pro", monospace;
+  }
+  .Sidebar .Beforelogin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Mate SC", serif;
+    align-items: center;
+
+    background-color: black;
+    color: #ffffff;
+    height: 5%;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  .Sidebar .Beforelogin a {
+    margin-left: 0px;
+  }
+  .Sidebar .Beforelogin p {
+    text-align: center;
+    display: block;
+    width: 500px;
+  }
+  .Sidebar img {
+    display: none;
+  }
+
+  .Sidebar a:hover {
+    color: #3912f9;
+  }
+}

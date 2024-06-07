@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+.Chat {
+  margin-top: 70px;
+  margin-left: 500px;
+  background-color: black;
+  box-shadow: 0px 2px 8px #a9bbce;
+  height: 600px;
+  width: 500px;
+  text-align: center;
+
+  overflow: auto;
+}
+
+.Scrolling-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.myMessages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+.messages {
+  display: flex;
+  margin-left: 120px;
+}
+.Chat .Scrolling-content input {
+  width: 70%;
+  height: 5vh;
+  border: none;
+  background-color: #ffffff;
+  font-family: "dancing script";
+  font-size: 20px;
+  font-weight: 500;
+}
+.Chat .Scrolling-content input:focus {
+  outline: none;
+}
+
+.Chat .Scrolling-content .input-group {
+  display: flex;
+  flex-direction: row;
+}
+.Chat .Scrolling-content .input-group button {
+  width: 30%;
+  background-color: transparent;
+  color: #ffffff;
+
+  height: 5vh;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Source Code Pro";
+  border: 2px solid #03c988;
+}
+.Chat .Scrolling-content .input-group button:hover {
+  background-color: #03c988;
+}
+
+/* For Mobile users */
+
+@media only screen and (max-width: 750px) {
+  .Chat {
+    margin-top: 300px;
+    margin-left: 0px;
+    background-color: black;
+    box-shadow: 0px 2px 8px #a9bbce;
+    height: 600px;
+    width: 500px;
+    text-align: center;
+
+    overflow: auto;
+  }
+}
